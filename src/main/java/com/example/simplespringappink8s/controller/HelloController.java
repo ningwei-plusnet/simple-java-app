@@ -12,8 +12,8 @@ public class HelloController {
         return "hali halo";
     }
 
-
-
-
-
+    @RequestMapping(method = RequestMethod.GET, path="/resource")
+    public String resource () {
+        return "{Project-A: ResourceA.1,ResourceA.2}";
+    }
 }
